@@ -5,9 +5,11 @@ ENG:
 This is an unofficial save editor for Lightyear Frontier, designed to transfer player progress. If you joined your world and got the intro again, have none of your items, but everything else loaded correctly and your buildings are still there, then you know you need to use this tool
 
 ## What do you need?
-- Python 3.10 or newer
--  A positive attitude
--  Be patient because it is worth fighting for your progress!!
+
+> [!IMPORTANT]
+> - Python 3.10 or newer
+> -  A positive attitude
+> -  Be patient because it is worth fighting for your progress!!
 
 _I know it looks like complicated, but it's just everything explained in more detail so you know the most important things._
 
