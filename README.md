@@ -10,7 +10,7 @@ This is an unofficial save editor for Lightyear Frontier, designed to transfer p
  - Be patient because it is worth fighting for your progress!!
 
 > [!CAUTION]
-> _I know it looks like complicated, but it's just everything explained in more detail so you know the most important things._
+> I know it looks like complicated, but it's just everything explained in more detail so you know the most important things.
 
 ## Features
 - Transferring items, mech components, and tools from one player to another if, after launching the game on Steam or another platform, a new player is created instead of your existing character being loaded.
@@ -23,3 +23,33 @@ This is an unofficial save editor for Lightyear Frontier, designed to transfer p
 
 > [!IMPORTANT]
 > Installation instructions can be found in the folder after downloading in Polish and English!
+
+
+PL:
+
+Jest to nieoficjalne narzędzie do edycji zapisów gry w grze Lightyear Frontier w celu przeniesienia postępu gracza. Jeśli dołączyłeś do swojego świata i masz intro i nie masz swoich przedmitów ale reszta poprawnie się wczytała i masz
+swoje budowle to wiesz że musisz użyć tego narzędzia.
+
+## Co potrzebujesz?
+- Python 3.10 lub nowszy
+- Pozytywnego myślenia
+- Cierpliwości bo warto walczyć o swój postęp!!
+
+> [!CAUTION]
+> Wiem że wygląda na skomplikowane, ale to jest po prostu wszystko dodatkowo
+opisane żebyś wiedział jak najważniejsze rzeczy.
+
+
+## Funkcje:
+- Przenoszenie przedmiotów, elemntów mecha, narzędzi z innego gracza do innego gracza w przypadku uruchomienia
+gry na platformie steam lub innej w której to zamiast wczytanej postaci tworzy się nowy gracz.
+- Otwieranie plików zapisu `.sav`.
+- Informacje co znajduję się w danym ekwipunku gracza, w mechu oraz narzędzia
+- Porównywanie liczby wystąpień identyfikatorów między zapisami.
+- Zamiana identyfikatora i zapis wyniku do nowego pliku, bez nadpisywania pliku źródłowego.
+- Przy operacji zamiany tworzenie plików pomocniczych do cofnięcia: kopii oryginalnego zapisu oraz metadanych weryfikacyjnych.
+- Funkcja **Undo Transfer / Restore Original** przywracająca dokładny zapis sprzed operacji, jeśli zachowano pliki pomocnicze.
+
+> [!IMPORTANT]
+> Instrukcje instalacji znajdziesz w folderze po pobraniu w języku Polskim i Angielskim!
+
