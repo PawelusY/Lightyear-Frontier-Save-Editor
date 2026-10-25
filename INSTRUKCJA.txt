@@ -1,0 +1,71 @@
+Jest to nieoficjalne narzędzie do edycji zapisów gry w grze Lightyear Frontier w celu przeniesienia postępu gracza. Jeśli dołączyłeś do swojego świata i masz intro i nie masz swoich przedmitów ale reszta poprawnie się wczytała i masz
+swoje budowle to wiesz że musisz użyć tego narzędzia. Więcej informacji niżej:
+
+Co potrzebujesz?
+
+- Python 3.10 lub nowszy
+- Pozytywnego myślenia
+- Cierpliwości bo warto walczyć o swój postęp!!
+
+Wiem że wygląda na dużo pisania i skomplikowane się wydaje ale to jest po prostu wszystko dodatkowo
+opisane żebyś wiedział jak najważniejsze rzeczy.
+
+PAMIĘTAJ ŻEBY WRAZIE CZEGO ZROBIĆ KOPIE ZAPASOWĄ WSZYSTKICH PLIKÓW
+W FOLDERZE SAVEGAMES !
+
+Funkcje
+
+- Przenoszenie przedmiotów, elemntów mecha, narzędzi z innego gracza do innego gracza w przypadku uruchomienia
+gry na platformie steam lub innej w której to zamiast wczytanej postaci tworzy się nowy gracz.
+- Otwieranie plików zapisu `.sav`.
+- Informacje co znajduję się w danym ekwipunku gracza, w mechu oraz narzędzia
+- Porównywanie liczby wystąpień identyfikatorów między zapisami.
+- Zamiana identyfikatora i zapis wyniku do nowego pliku, bez nadpisywania pliku źródłowego.
+- Przy operacji zamiany tworzenie plików pomocniczych do cofnięcia: kopii oryginalnego zapisu oraz metadanych weryfikacyjnych.
+- Funkcja **Undo Transfer / Restore Original** przywracająca dokładny zapis sprzed operacji, jeśli zachowano pliki pomocnicze.
+
+Skąd znaleźć save?
+
+Save znajduję się zazwyczaj w: C:\Users\przykład\AppData\Local\FarMech\Saved\SaveGames 
+lub w folderze z grą: Lightyear Frontier\FarMech\Saved\SaveGames
+
+Jak używać?
+
+Na początku przed tym wszystkim dla bezpieczeństwa ( nie testowane ) najlepiej wyłącz Steam Cloud w tej grze = 
+Prawym na lightyear frointier na steam → Właściwości → Ogólne → Zachowuj zapisane stany gry w Steam Cloud.... 
+WYŁĄCZONE.
+
+W grze: ( Najważniejsze )
+
+Jeżeli grasz samemu i nikogo nie było na twoim świecie, możesz
+wyłączyć grę i przejść do folderu z narzędziem. Jeżeli grasz z kimś i ktoś nie wszedł jeszcze na twój świat to poproś go 
+żeby to zrobił, dzięki czemu utworzy się też jego nowa postać i będziesz mógł przenieść jego postęp na nową. Teraz
+możesz/możecie zamknąć gre i osoba która zakładała serwer niech zrobi kopie zapasową.
+
+Poza grą:
+0. Wyłącz Steam Cloud tej gry = Prawym na lightyear frointier na steam → Właściwości → Ogólne → Zachowuj zapisane 
+stany gry w 
+1. Wypakuj .zip do folderu 
+2. Wejdź w folder ,,dist" i włącz LightyearFrontierSaveEditor.exe ( jak nie zadziała uruchom administratorem )
+3. Kliknij ,,Open .sav Save"
+4. wybierz właściwy plik z save, przykłady: World_0, World_1. GeneralSave zawiera informacje o ustawieniach gry i tym podobne
+5. jeśli grasz samemu, to raczej nie będziesz mieć problemu z znalezieniem właściwego ID, jeśli grasz multiplayer
+to powinno pisać obok ID Role kto jest hostem a kto clientem.
+6. Jeżeli wiesz dokładnie jakie ID masz albo ma twój znajomy razem z tobą to możesz zacząć działać!
+7. Wybierz swój zapis postaci z postępem, przykładowo niech to będzie PROFIL A i skopiuj w lewym dolnym rogu 
+,, Old ID "
+8. Wybierz zapis postaci która została stworzona na nowo przez gre z brakiem postępu, przykładowo PROFIL B
+i wklej ID z swojego starego zapisu na nowy w pole ,,New ID" i kliknij ,,Replace and Save As..." i zapisz to zastępując plik
+ ( jeśli zrobiłeś kopie zapasową, jeżeli jej nie zrobiłeś to zrób to teraz. )
+9. Włącz grę i wczytaj zapis, jeżeli zastąpiłeś nie swój proces w grze wyłącz grę bez zapisywania i wróć do programu i 
+kliknij ,,Undo Transfer / Restore Original`, a następnie zapisz zastępując plik, jeśli nie zadziała po prostu skopiuj i wklej
+swój świat z swojej kopi zapasowej, NIE PRZERZUCAJ BO STRACISZ KOPIĘ ZAPASOWĄ.
+10. Jeżeli wszystko działa i twój znajomy ma swoje rzeczy i swoje moduły do mecha to możesz w spokoju się cieszyć grą!
+A mi napisać komentarz że działa albo po prostu nic nie robić. 
+
+Ważne uwagi:
+
+- Cofnięcie przywraca dokładny zapis sprzed transferu. Zmiany zrobione w grze po transferze nie zostaną zachowane.
+- Nie testowane na zapisach współdzielonych.
+- Nie testowane z włączoną opcją Steam Cloud. Dla bezpieczeństwa po prostu wyłącz ją w tej grze.
+

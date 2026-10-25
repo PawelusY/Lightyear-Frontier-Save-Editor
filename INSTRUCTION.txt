@@ -1,0 +1,57 @@
+This is an unofficial save editor for Lightyear Frontier, designed to transfer player progress. If you joined your world and got the intro again, have none of your items, but everything else loaded correctly and your buildings are still there, then you know you need to use this tool. More information below:
+
+What do you need?
+- Python 3.10 or newer
+- A positive attitude
+- Be patient because it is worth fighting for your progress!!
+
+I know it looks like a lot of writing and seems complicated, but it's just everything explained in more detail so you know the most important things.
+
+
+REMEMBER TO MAKE A BACKUP COPY OF ALL FILES IN THE SAVEGAMES FOLDER JUST IN CASE!
+
+Features:
+
+- Transferring items, mech components, and tools from one player to another if, after launching the game on Steam or another platform, a new player is created instead of your existing character being loaded.
+- Opening .sav save files.
+- Information about what is contained in a player's inventory, mech, and tools.
+- Comparing the number of occurrences of IDs between save files.
+- Replacing an ID and saving the result to a new file without overwriting the source file.
+- Creating auxiliary files during an ID replacement operation to allow it to be undone: a copy of the original save and verification metadata.
+- The Undo Transfer / Restore Original function, which restores the exact save from before the operation, provided that the auxiliary files have been preserved.
+
+Where can you find your save?
+
+The save is usually located at: C:\Users\Example\AppData\Local\FarMech\Saved\SaveGames
+or in the game folder: Lightyear Frontier\FarMech\Saved\SaveGames
+
+How to use it?
+
+Before doing anything for safety reasons (not tested), it is best to disable Steam Cloud for this game. Right-click Lightyear Frontier on Steam → Properties → General → Keep game saves in the Steam Cloud... 
+Set it to OFF.
+
+In the game: (most important!)
+
+If you are playing alone and nobody else has ever joined your world, you can close the game and go to the folder containing the tool.
+If you are playing with someone and that person has not joined your world yet, ask them to join. This will create their new character as well, allowing you to transfer their progress to the new character. Now you can both close the game, and the person who hosts the world should make a backup copy.
+
+Outside the game:
+
+0. Disable Steam Cloud for this game: Right-click Lightyear Frontier on Steam → Properties → General → Keep game saves in the Steam Cloud...
+1. Extract the .zip file into a folder.
+2. Open the dist folder and launch LightyearFrontierSaveEditor.exe. If it does not work, try running it as administrator.
+3. Click Open .sav Save.
+4. Select the correct save file. Examples: World_0, World_1. GeneralSave contains information about game settings and similar data.
+5. If you are playing alone, you probably won't have any trouble finding the correct ID. If you are playing multiplayer, the role of each player should be displayed next to their ID, indicating who is the host and who is the client.
+6. If you know exactly which ID belongs to you or your friend, you can start!
+7. Select the character save that contains the progress you want to transfer. For example, let's call it PROFILE A. Copy its ID from the bottom-left corner using Old ID.
+8. Select the character profile that was newly created by the game and has no progress. For example, PROFILE B.
+Paste the ID from your old save into the New ID field, then click Replace and Save As... and save the file, replacing the existing one (if you have made a backup copy. If you haven't, make one now).
+9. Launch the game and load the save. If you replaced the wrong player's progress, close the game without saving, return to the program, and click Undo Transfer / Restore Original. Then save the file, replacing the existing one. If that doesn't work, simply copy and paste your world from your backup copy. DO NOT MOVE IT, OR YOU WILL LOSE YOUR BACKUP COPY.
+10. If everything works and your friend has their items and mech modules back, you can enjoy the game in peace! You can leave me a comment saying that it works, or simply do nothing.
+
+Important notes:
+
+- Undo restores the exact save from before the transfer. Changes made in the game after the transfer will not be preserved.
+- Not tested with shared saves.
+- Not tested with Steam Cloud enabled. For safety, simply disable it for this game.
